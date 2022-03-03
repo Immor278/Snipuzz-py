@@ -1,0 +1,62 @@
+========Seed 0========
+Message Index-0
+IP:192.168.0.103
+Port:55443
+Content:{"id": 0, "method": "get_prop", "params": ["power"]}
+
+Original Response
+{"id":0,"result":["off"]}
+
+
+Probe Result:
+PI
+1 1 1 1 1 0 0 2 0 0 1 3 3 3 3 3 3 1 0 0 1 4 4 4 4 4 4 4 4 1 0 0 1 3 3 3 3 3 3 1 0 0 1 1 5 5 5 5 5 1 1 1 
+PR and PS
+(0) {"id":0,"result":["off"]}
+
+100.0
+(1) {"id":(null), "error":{"code":-1, "message":"invalid command"}}
+
+100.0
+(2) {"id":method, "error":{"code":-1, "message":"invalid command"}}
+
+100.0
+(3) {"id":0, "error":{"code":-1, "message":"invalid command"}}
+
+100.0
+(4) {"id":0, "error":{"code":-1, "message":"client quota exceeded"}}
+
+100.0
+(5) {"id":0, "result":[""]}
+
+100.0
+Message Index-1
+IP:192.168.0.103
+Port:55443
+Content:{"id": 1, "method": "set_power", "params": ["on"]}
+
+Original Response
+{"id":1, "result":["ok"]}
+
+
+Probe Result:
+PI
+1 1 1 1 1 0 0 2 0 0 1 3 3 3 3 3 3 1 0 0 1 0 0 0 0 0 0 0 0 0 1 4 4 1 3 3 3 3 3 3 1 4 4 1 1 4 4 1 1 1 
+PR and PS
+(0) {"id":1, "error":{"code":-1, "message":"client quota exceeded"}}
+
+100.0
+(1) {"id":(null), "error":{"code":-1, "message":"invalid command"}}
+
+100.0
+(2) {"id":method, "error":{"code":-1, "message":"invalid command"}}
+
+100.0
+(3) {"id":1, "error":{"code":-1, "message":"invalid command"}}
+
+100.0
+(4) {"id":1, "result":["ok"]}
+
+100.0
+
+
